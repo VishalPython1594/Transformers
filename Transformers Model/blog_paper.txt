@@ -1,0 +1,163 @@
+https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+
+
+https://jalammar.github.io/illustrated-transformer/
+
+https://www.instagram.com/reel/C_e-hoiPXqC/?igsh=bnQ4dnNoa3JydmN0
+
+
+documents = [
+  "Quantum mechanics describes the behavior of very small particles.",
+  "Photosynthesis is the process by which green plants make food using sunlight.",
+  "Shakespeare's plays are a testament to English literature.",
+  "Artificial Intelligence aims to create machines that can think and learn.",
+  "The pyramids of Egypt are historical monuments that have stood for thousands of years.",
+  "Biology is the study of living organisms and their interactions with the environment.",
+  "Music therapy can aid in the mental well-being of individuals.",
+  "The Milky Way is just one of billions of galaxies in the universe.",
+  "Economic theories help understand the distribution of resources in society.",
+  "Yoga is an ancient practice that involves physical postures and meditation."
+]
+
+
+
+reviews = [
+    "I had high hopes for the UltraClean vacuum cleaner, but it hardly picks up any dirt. Also, the battery life is abysmal. Not worth the price.",
+    "The SunBurst solar charger was advertised as being highly efficient, but it barely charges my devices. Even under direct sunlight, it takes forever. A complete letdown.",
+    "Bought the AirLite drone, and it's not user-friendly at all. The controls are confusing, and the camera quality is mediocre at best. Wish I had gone for another brand.",
+    "Bought the LumiGlow skincare serum a month ago, and the results are visible! My skin feels rejuvenated and the fine lines have reduced. Definitely worth the investment.",
+    "The TerraFit hiking boots are outstanding. They're not only durable but also provide excellent support during long treks. My feet have never felt so comfortable during hikes.",
+    "I was skeptical about the QuickCook microwave oven initially, but it has surpassed all my expectations. The multi-function features and quick heating technology are truly innovative. A must-have in every kitchen!",
+    "The Prestige juicer is a disappointment. It constantly gets jammed, and cleaning it is a nightmare. I regret this purchase.",
+    "I recently purchased the AquaBliss water filter, and I'm genuinely impressed! Not only was the installation straightforward, but the water tastes remarkably fresh. Highly recommended for anyone wanting pure drinking water.",
+    "The SoundWave headphones are a game-changer. They fit comfortably, and the noise-cancellation feature is top-notch. I can finally enjoy my music without any interruptions.",
+    "The GlamorEyes mascara is terrible. It clumps easily and doesn't provide the volume it promises. Definitely won't be repurchasing.",
+    "The StreamLine smartwatch is a fantastic addition to my tech collection. It tracks my health metrics accurately, and the battery life is commendable. It's stylish and functional.",
+    "I've been using the SilkSoft hair conditioner for the past two weeks, and my hair has never felt better. It's silky, tangle-free, and smells divine. Highly recommend for those with frizzy hair.",
+    "The LuxeShine nail polish chips easily and doesn't last more than a day. The colors are lovely, but the quality leaves much to be desired.",
+    "Tried the PowerPulse wireless earbuds, and they keep disconnecting randomly. The sound quality is also underwhelming. Not what I expected for the price.",
+    "The ZoomDrive USB stick is both compact and efficient. Transferring files has never been faster, and its durable design ensures I don't have to worry about data loss.",
+    "Opted for the FreshBreeze air purifier, and it has made a noticeable difference in my home. Allergies are at bay, and the air feels cleaner and fresher.",
+    "The ClearVue window cleaner left streaks on my windows. I had to redo the cleaning with another product. It's more hassle than it's worth.",
+    "The MegaGrill BBQ set looked sturdy online, but in reality, it's flimsy and poorly constructed. Cooking on it has been a challenge.",
+    "The UrbanWalk sneakers are not only trendy but also incredibly comfortable. I've worn them for both workouts and casual outings, and they've been perfect for both.",
+    "The SwiftWrite pen set is not worth the money. The ink smudges, and the pens run out way too quickly. I'll be looking for alternatives."
+]
+
+
+
+context = """
+Cancer Detection for the Brain: An Overview of Modern Methods and the Role of Computer Vision
+
+Cancer, a group of diseases characterized by the uncontrolled growth and spread of abnormal cells, has long been a significant concern in medical science. Among the various types of cancer, brain cancer is particularly alarming due to its location in the central nervous system. Detecting brain cancer early is crucial, as it significantly improves the chances of successful treatment and patient survival. This essay will delve into the methods available for detecting brain cancer, emphasizing early detection techniques and the growing role of computer vision in this arena.
+
+1. Traditional Detection Methods:
+a. Magnetic Resonance Imaging (MRI): This is the most commonly used technique for diagnosing brain tumors. MRI uses powerful magnets and radio waves to produce detailed images of the brain. These images can help identify abnormal growths, which may then be biopsied for confirmation.
+
+b. Computed Tomography (CT) Scan: Although not as detailed as MRI, CT scans are faster and can provide valuable information about the presence and location of tumors. They use X-rays to produce cross-sectional images of the brain.
+
+c. Biopsy: A biopsy is the removal of a small amount of tissue for examination under a microscope. This is the most definitive way to diagnose cancer. Surgeons usually perform biopsies using a needle or during surgery.
+
+2. Early Detection Techniques:
+a. Advanced Imaging: Advanced MRI techniques, such as functional MRI (fMRI) and magnetic resonance spectroscopy (MRS), can detect early changes in the brain's functionality or chemistry, even before a tumor becomes apparent.
+
+b. Liquid Biopsy: This is a non-invasive method where doctors test the blood for tiny fragments of DNA shed by cancer cells. While still in the research phase for brain cancer, it holds promise for early detection.
+
+c. Neurological Exams: Regular neurological exams can catch subtle changes in brain function, such as coordination, memory, or reflexes, which might be indicative of a developing tumor.
+
+3. Computer Vision and Brain Cancer Detection:
+With the advancement of artificial intelligence (AI) and machine learning, computer vision has emerged as a potent tool in the medical field, especially in cancer detection.
+
+a. Image Segmentation: Computer vision algorithms can segment MRI or CT scan images to highlight potential tumor regions accurately. This can be particularly useful in identifying small tumors that might be overlooked by the human eye.
+
+b. Predictive Analysis: Using vast datasets, computer vision systems can predict the likelihood of a tumor being malignant or benign. This assists doctors in deciding whether a biopsy is necessary.
+
+c. Automated Monitoring: By comparing current images with previous scans, computer vision can detect minute changes over time, enabling the identification of tumors at a very early stage.
+
+d. Enhanced Visualization: Computer vision can enhance the visualization of scans, making it easier for radiologists to interpret the results. Techniques like deep learning can amplify the differences between healthy and cancerous tissues.
+
+In conclusion, while traditional methods of brain cancer detection remain foundational, the integration of modern techniques, especially computer vision, is revolutionizing the early detection and diagnosis of this life-threatening disease. The synergy of human expertise and machine precision promises a brighter future for patients at risk of brain cancer. As research progresses and technology becomes more advanced, we can anticipate even more accurate and early detection methods, potentially saving countless lives.
+"""
+
+
+
+data = {
+    "Year": [2020, 2016, 2012, 2008, 2004, 2000, 1996, 1992, 1988, 1984],
+    "Host City": ["Tokyo", "Rio de Janeiro", "London", "Beijing", "Athens", "Sydney", "Atlanta", "Barcelona", "Seoul", "Los Angeles"],
+    "Host Country": ["Japan", "Brazil", "United Kingdom", "China", "Greece", "Australia", "USA", "Spain", "South Korea", "USA"],
+    "Participating Nations": [205, 207, 204, 204, 201, 199, 197, 169, 159, 140],
+    "Athletes": [11338, 11238, 10568, 10942, 10625, 10651, 10318, 9356, 8391, 6829],
+    "Sports": [33, 28, 26, 28, 28, 28, 26, 25, 23, 21],
+    "Leading Country": ["USA", "USA", "USA", "China", "USA", "USA", "USA", "Unified Team", "Soviet Union", "USA"],
+    "Total Medals": [113, 121, 104, 100, 103, 97, 101, 112, 132, 174]
+}
+
+
+
+data = {
+    "news_article": [
+        "Local team, the Riverside Roarers, wins the national championship!",
+        "Olympics postponed due to unforeseen circumstances, world athletes in shock.",
+        "New athletic shoes by SportsMaster promise better performance for athletes.",
+        "Stock markets hit an all-time high; investors rejoice as GlobalTrade Inc. leads the surge.",
+        "Tech giant NeoTech set to acquire startup InnovateSoft, sparking industry buzz.",
+        "Latest quarterly reports show unexpected profits for FinCorp Industries.",
+        "Revolutionary new AI tech from AIRevolution promises to change the way we work.",
+        "Major tech conference TechFest 2023 postponed due to health concerns.",
+        "Breakthrough in quantum computing achieved by Pinnacle University researchers.",
+        "Financial analysts at MoneyMatters predict a bullish year for commodities, especially gold."
+    ],
+    "human_labels": [
+        "sports",
+        "sports",
+        "sports",
+        "business",
+        "business",
+        "business",
+        "technology",
+        "technology",
+        "technology",
+        "business"
+    ]
+}
+
+
+
+
+"""Congratulations! You've Secured Your Spot in the Learnbay Data Science Internship Jan '24 Program! 🌟
+Dear Applicant,
+
+Congratulations!
+
+
+We are thrilled to inform you that your profile has been shortlisted for the prestigious Learnbay Data Science Internship Program, January 2024. Welcome to the journey of learning, growth, and exciting opportunities!
+
+Let's celebrate your achievement with some impressive numbers. This year, we received a staggering 20,000 applications, and you stand out as one of the top 10% who made it through our rigorous screening process. Your dedication and skills truly set you apart!
+
+To formalize your acceptance and proceed with the onboarding process, we kindly ask you to complete your profile by filling out the following form: Form Link. If you've already submitted the form, please disregard this message. The deadline to fill the form is January 18, 2024 by 5:00 PM IST.
+
+Important Dates to Remember:
+1. Internship Offer Letters and Zoom link to join the internship will be shared via email on January 22, 2024
+2. Internship Start Date is January 24, 2024
+   - Timing: 6:00 PM to 7:00 PM IST
+
+Feel free to share this exciting news with your friends and family. We look forward to welcoming you to the Learnbay community and embarking on this rewarding journey together.
+
+Congratulations once again, and get ready for an incredible experience!
+
+Best regards,
+Learnbay Data Science Internship Team
+"""
+
+
+product_review = """I bought this product from Flipkart website.
+This product is very worst and replacement policy is very bad. Even I went to their New Delhi support center.
+I used this laptop only for 30 minute and suddenly it turn off and it will never turn on.
+And Flipkart website does not replace this product. I should have gone for better brands like Apple or Alienware.
+"""
+
+
+
+
+
+
